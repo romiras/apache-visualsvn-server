@@ -1,0 +1,10 @@
+[/]
+*=
+
+[test:/]
+*=r
+demo=rw
+
+[myproject:/]
+*=
+demo=rw
