@@ -18,12 +18,16 @@ All repositories will be accessible via https://localhost:8443/svn/
 Access
 ------
 
+<pre><code>
 Username: demo
 Password: demo
+</code></pre>
 
 To add new user:
 
-  htpasswd -m /var/svn/dav_svn.htpasswd <ENTER_USER_NAME_HERE>
+<pre><code>
+htpasswd -m /var/svn/dav_svn.htpasswd <ENTER_USER_NAME_HERE>
+</code></pre>
 
 Setting permissions per project: see file /var/svn/dav_svn.authz
 
@@ -33,8 +37,10 @@ ACL permissions
 
 All Subversion directories must be writable by Apache (www-data).
 
-  chown -R www-data:www-data /var/svn/
-  chown -R www-data:www-data /var/www/
+<pre><code>
+chown -R www-data:www-data /var/svn/
+chown -R www-data:www-data /var/www/
+</code></pre>
 
 SSL certificate
 ---------------
@@ -49,4 +55,6 @@ Checkout
 
 You can now checkout the revision zero of your subversion repository by:
 
-  svn checkout https://localhost:8443/svn/REPO_NAME
+<pre><code>
+svn checkout https://localhost:8443/svn/REPO_NAME
+</code></pre>
